@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sup!!!</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/water.css">
+  <style>
+    body       
+      {
+      background-image: url("spider.jpg");
+      background-size: cover;
+      background-position: cover;
+      background-repeat: no-repeat;
+      object-fit: cover;
+    }
+    
+    h1 {
+      color: #dbd8d8;
+    }
+    h2 {
+      color:aliceblue;
+    }
+    button {
+      background-color: #d74f46;
+      color: rgb(243, 239, 239);
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      cursor: pointer;
+      margin: 10px;
+    }
+    
+    button:hover {
+      opacity: 0.8;
+    }
+  </style>
+  <script>
+    var password = "admin123"; // Change this to your desired password
+    
+    function signIn() 
+    {
+      var enteredPassword = prompt("Enter password:");
+      
+      if (enteredPassword === password) {
+        // Successful sign-in logic here
+        alert("Signed in successfully!");
+        window.location.href = "nextpage.html"; // Redirect to the next page
+      } else {
+        // Failed sign-in logic here
+        alert("Incorrect password. Please try again.");
+      }
+    }
+    
+  </script>
+</head>
+<body>
+  <h1>Hi, I'm Mile Morales</h1>
+  <h2>And this is my WEB PAGE</h2>
+  
+  <button onclick="signIn()">Enter Password</button> 
+</body>
+</html>
